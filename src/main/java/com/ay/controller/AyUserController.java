@@ -349,17 +349,17 @@ public class AyUserController {
 //        AyUser ayUser = ayUserService.findById("1");
 //        return "success";
 //    }
-//
-//    @GetMapping("/findAll")
-//    public String findAll(Model model){
-//        List<AyUser> ayUserList = ayUserService.findAll();
-//        for(AyUser ayUser : ayUserList){
-//            System.out.println("id: " + ayUser.getId());
-//            System.out.println("name: " + ayUser.getName());
-//        }
-//        return "hello";
-//    }
-//
+
+    @GetMapping("/findAll")
+    public String findAll(Model model){
+        List<AyUser> ayUserList = ayUserService.findAll();
+        for(AyUser ayUser : ayUserList){
+            System.out.println("id: " + ayUser.getId());
+            System.out.println("name: " + ayUser.getName());
+        }
+        return "hello";
+    }
+
 //    @GetMapping("/findById")
 //    public String findById(Model model){
 //        AyUser ayUser = ayUserService.findById("1");

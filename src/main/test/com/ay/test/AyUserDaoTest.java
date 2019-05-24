@@ -24,13 +24,14 @@ public class AyUserDaoTest extends BaseJunit4Test{
     @Resource
     private AyUserDao ayUserDao;
 
-//    @Test
-//    public void testFindAll(){
+    @Test
+    public void testFindAll(){
 //        List<AyUser> userList = ayUserDao.findAll(new RowBounds(0, 5));
-//        for(AyUser ayUser: userList){
-//            System.out.println("name: " + ayUser.getName());
-//        }
-//    }
+        List<AyUser> userList = ayUserDao.findAll();
+        for(AyUser ayUser: userList){
+            System.out.println("name: " + ayUser.getName());
+        }
+    }
 
     @Test
     public void testPageHelper(){
